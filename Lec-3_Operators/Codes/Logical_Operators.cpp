@@ -1,26 +1,53 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void And(bool a,bool b){
-    cout<<boolalpha;
-    cout<<"And of "<<a<<" and "<<b<<" is "<<(a&&b)<<endl;// only true&&true is true 
+void Equal(int a, int b)
+{
+    cout << boolalpha;
+    cout << a << " == " << b << " is " << (a == b) << endl; // true if a equals b
 }
 
-void Or(bool a,bool b){
-    cout<<boolalpha;
-    cout<<"Or of "<<a<<" and "<<b<<" is "<<(a||b)<<endl;// only false||false is false
+void NotEqual(int a, int b)
+{
+    cout << boolalpha;
+    cout << a << " != " << b << " is " << (a != b) << endl; // true if a not equal b
 }
 
-void Not(bool a){
-    cout<<boolalpha;
-    cout<<"Not of "<<a<<" is "<<(!a)<<endl;// !true is false !false is true
+void Greater(int a, int b)
+{
+    cout << boolalpha;
+    cout << a << " > " << b << " is " << (a > b) << endl; // true if a greater than b
 }
 
-int main(){
-    bool a=true;
-    bool b=false;
-    And(a,b);
-    Or(a,b);
-    Not(a);
+void Less(int a, int b)
+{
+    cout << boolalpha;
+    cout << a << " < " << b << " is " << (a < b) << endl; // true if a less than b
+}
+
+void GreaterEqual(int a, int b)
+{
+    cout << boolalpha;
+    cout << a << " >= " << b << " is " << (a >= b) << endl; // true if a greater or equal
+}
+
+void LessEqual(int a, int b)
+{
+    cout << boolalpha;
+    cout << a << " <= " << b << " is " << (a <= b) << endl; // true if a less or equal
+}
+
+int main()
+{
+    int a = 5;
+    int b = 10;
+
+    Equal(a, b);
+    NotEqual(a, b);
+    Greater(a, b);
+    Less(a, b);
+    GreaterEqual(a, b);
+    LessEqual(a, b);
+
     return 0;
 }
