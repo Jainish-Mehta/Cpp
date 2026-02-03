@@ -52,7 +52,7 @@ int main()
     swapByReference(b, c);
     cout << "After swapByReference: b=" << b << " c=" << c << endl;
 
-    usingPointer(&b, &c);
+    usingPointer(&a, &b);
 
     return 0;
 }
